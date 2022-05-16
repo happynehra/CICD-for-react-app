@@ -1,4 +1,4 @@
-# FLow of execution
+# Flow of execution
 1. Bootstrap a `create-react-app` project.
 2. Created a new repository on github & pushed the code there.
 3. Created a free account on AWS.
