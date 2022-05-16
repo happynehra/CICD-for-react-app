@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Flow of execution
+1. Bootstrap a `create-react-app` project.
+2. Created a new repository on github & pushed the code there.
+3. Created a free account on AWS.
+4. Deployed the app on S3 (config to be done for routes).
+5. Added a Cloudfront Distribution for the S3 bucket.
+6. Created code pipeline step, triggered on code change of `release` branch.
+7. Created code build step, generates the react build artifact.
+8. Created code deploy step, took the artifact from previous step & deploys it to s3/cloudfront.
+9. Connected domain to cloudfront distribution.
+10. Attached SSL certificate to enable https on cloudfront distribution.
+11. Created SNS notifications (to email) for code pipeline stages, (started/succeded/failed) on tanmay@octoapp.ai, mithilesh@octoapp.ai & happynehra777@gmail.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Domains connected to cloudfront distribution with SSl certificate link.
+[www.happynehra.com](www.happynehra.com)  
+[happynehra.com](happynehra.com)  
 
-## Available Scripts
+### S3 bucket link
+[http://www.happynehra.com.s3-website.ap-south-1.amazonaws.com](http://www.happynehra.com.s3-website.ap-south-1.amazonaws.com)
 
-In the project directory, you can run:
+### Cloudfront Dristribution link
+[https://d1tgk0v6gzwr9y.cloudfront.net](https://d1tgk0v6gzwr9y.cloudfront.net)
 
-### `npm start`
+### Two routes configured in S3 bucket.
+1. www.happynehra.com
+2. happynehra.com
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Problems fixed in this project 
+1. Build and test for every commit.
+2. Automated process.
+3. Notify for every build status.
+4. Fix code if bugs or error found instantly rathen than waiting.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Benefits 
+1. Agile.
+2. No Ops.
+3. No human intervention.
+4. short MTTR.
+5. Fault isolation.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![iamge](image.png)
