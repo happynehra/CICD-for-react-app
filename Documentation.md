@@ -11,7 +11,7 @@
 10. Attached SSL certificate to enable https on cloudfront distribution.
 11. Created SNS notifications (to email) for code pipeline stages, (started/succeded/failed) on tanmay@octoapp.ai, mithilesh@octoapp.ai & happynehra777@gmail.com
 
-### Routes for app 
+### Domains connected to cloudfront distribution with SSl certificate link.
 [www.happynehra.com](www.happynehra.com)  
 [happynehra.com](happynehra.com)  
 
@@ -20,3 +20,20 @@
 
 ### Cloudfront Dristribution link
 [https://d1tgk0v6gzwr9y.cloudfront.net](https://d1tgk0v6gzwr9y.cloudfront.net)
+
+### Two routes configured in S3 bucket.
+1. www.happynehra.com
+2. happynehra.com
+
+## Problems fixed in this project 
+1. Build and test for every commit.
+2. Automated process.
+3. Notify for every build status.
+4. Fix code if bugs or error found instantly rathen than waiting.
+
+## Benefits 
+1. Agile.
+2. No Ops.
+3. No human intervention.
+4. short MTTR.
+5. Fault isolation.
