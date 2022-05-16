@@ -11,8 +11,6 @@
 10. Attached SSL certificate to enable https on cloudfront distribution.
 11. Created SNS notifications (to email) for code pipeline stages, (started/succeded/failed) on tanmay@octoapp.ai, mithilesh@octoapp.ai & happynehra777@gmail.com
 
-![iamge](image.png)
-
 ### Domains connected to cloudfront distribution with SSl certificate link.
 [www.happynehra.com](www.happynehra.com)  
 [happynehra.com](happynehra.com)  
@@ -39,3 +37,6 @@
 3. No human intervention.
 4. short MTTR.
 5. Fault isolation.
+
+
+![iamge](image.png)
