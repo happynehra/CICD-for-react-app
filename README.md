@@ -9,22 +9,7 @@
 8. Created code deploy step, took the artifact from previous step & deploys it to s3/cloudfront.
 9. Connected domain to cloudfront distribution.
 10. Attached SSL certificate to enable https on cloudfront distribution.
-11. Created SNS notifications (to email) for code pipeline stages, (started/succeded/failed) on tanmay@octoapp.ai, mithilesh@octoapp.ai & happynehra777@gmail.com
-
-
-### Domains connected to cloudfront distribution with SSL certificate link.
-[www.happynehra.com](www.happynehra.com)  
-[happynehra.com](happynehra.com)  
-
-### S3 bucket link
-[http://www.happynehra.com.s3-website.ap-south-1.amazonaws.com](http://www.happynehra.com.s3-website.ap-south-1.amazonaws.com)
-
-### Cloudfront Dristribution link
-[https://d1tgk0v6gzwr9y.cloudfront.net](https://d1tgk0v6gzwr9y.cloudfront.net)
-
-### Two routes configured in S3 bucket.
-1. www.happynehra.com
-2. happynehra.com
+11. Created SNS notifications (to email) for code pipeline stages, (started/succeded/failed).
 
 ## Problems fixed in this project 
 1. Build and test for every commit.
