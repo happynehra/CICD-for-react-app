@@ -25,4 +25,4 @@
 5. Fault isolation.
 
 
-![iamge](image.png)
+![image](image.png)
